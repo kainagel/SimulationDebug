@@ -1,0 +1,118 @@
+2019-11-15 10:01:42,114  WARN ConfigConsistencyCheckerImpl:165 Using lanes without enabling linktolinkrouting might not lead to expected simulation results
+2019-11-15 10:01:42,114  WARN ConfigConsistencyCheckerImpl:61 AnalyzedModes in travelTimeCalculator config is not superset of network routing modes.  Will fail later except when defined by other means.
+2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103420 too small: enlarge storage capacity from: 74.22609731173559 Vehicles to: 371.130486558678 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103421 too small: enlarge storage capacity from: 74.22609731173559 Vehicles to: 371.130486558678 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103422 too small: enlarge storage capacity from: 85.89874962720619 Vehicles to: 429.493748136031 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103423 too small: enlarge storage capacity from: 85.89874962720619 Vehicles to: 429.493748136031 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103424 too small: enlarge storage capacity from: 75.5745333860178 Vehicles to: 377.8726669300891 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103425 too small: enlarge storage capacity from: 75.5745333860178 Vehicles to: 377.8726669300891 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103426 too small: enlarge storage capacity from: 68.05329724978756 Vehicles to: 340.2664862489378 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103427 too small: enlarge storage capacity from: 68.05329724978756 Vehicles to: 340.2664862489378 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-15 10:01:54,614  WARN QueueWithBuffer:378 Link 103428 too small: enlarge storage capacity from: 69.71473922549748 Vehicles to: 348.5736961274875 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-15 10:01:54,614  WARN QueueWithBuffer:378 Link 103429 too small: enlarge storage capacity from: 69.71473922549748 Vehicles to: 348.5736961274875 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-15 10:01:54,614  WARN QueueWithBuffer:378 Link 103430 too small: enlarge storage capacity from: 75.78185582822537 Vehicles to: 378.9092791411269 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-15 10:01:54,614  WARN QueueWithBuffer:381 Additional warnings of this type are suppressed.
+2019-11-15 10:01:57,099  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-15 10:01:57,099  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-15 10:01:57,099  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-15 10:01:57,115  WARN QVehicleImpl:80  Future occurences of this logging statement are suppressed.
+2019-11-15 10:01:57,115 ERROR QSim:313 got exception while cleaning up
+java.lang.NullPointerException
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.afterSim(QNetsimEngine.java:239)
+	at org.matsim.core.mobsim.qsim.QSim.cleanupSim(QSim.java:310)
+	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:244)
+	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
+	at org.matsim.core.controler.AbstractController$8.run(AbstractController.java:197)
+	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
+	at org.matsim.core.controler.AbstractController.mobsim(AbstractController.java:193)
+	at org.matsim.core.controler.AbstractController.iteration(AbstractController.java:144)
+	at org.matsim.core.controler.AbstractController.doIterations(AbstractController.java:112)
+	at org.matsim.core.controler.AbstractController.access$100(AbstractController.java:28)
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:80)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:48)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:31)
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:88)
+	at org.matsim.core.controler.NewControler.run(NewControler.java:84)
+	at org.matsim.core.controler.Controler.run(Controler.java:240)
+	at simulator.Simulator.run(Simulator.java:59)
+	at simulator.Simulator.main(Simulator.java:40)
+2019-11-15 10:01:57,115 ERROR AbstractController:208 Mobsim did not complete normally! afterMobsimListeners will be called anyway.
+java.lang.RuntimeException: Object is null; follow stack trace
+	at org.matsim.core.gbl.Gbl.assertNotNull(Gbl.java:209)
+	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertVehicles(PopulationAgentSource.java:116)
+	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertAgentsIntoMobsim(PopulationAgentSource.java:68)
+	at org.matsim.core.mobsim.qsim.QSim.createAgents(QSim.java:272)
+	at org.matsim.core.mobsim.qsim.QSim.prepareSim(QSim.java:257)
+	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:221)
+	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
+	at org.matsim.core.controler.AbstractController$8.run(AbstractController.java:197)
+	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
+	at org.matsim.core.controler.AbstractController.mobsim(AbstractController.java:193)
+	at org.matsim.core.controler.AbstractController.iteration(AbstractController.java:144)
+	at org.matsim.core.controler.AbstractController.doIterations(AbstractController.java:112)
+	at org.matsim.core.controler.AbstractController.access$100(AbstractController.java:28)
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:80)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:48)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:31)
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:88)
+	at org.matsim.core.controler.NewControler.run(NewControler.java:84)
+	at org.matsim.core.controler.Controler.run(Controler.java:240)
+	at simulator.Simulator.run(Simulator.java:59)
+	at simulator.Simulator.main(Simulator.java:40)
+2019-11-15 10:01:57,130 ERROR MatsimRuntimeModifications:54 Getting uncaught Exception in Thread main
+java.lang.RuntimeException: Object is null; follow stack trace
+	at org.matsim.core.gbl.Gbl.assertNotNull(Gbl.java:209)
+	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertVehicles(PopulationAgentSource.java:116)
+	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertAgentsIntoMobsim(PopulationAgentSource.java:68)
+	at org.matsim.core.mobsim.qsim.QSim.createAgents(QSim.java:272)
+	at org.matsim.core.mobsim.qsim.QSim.prepareSim(QSim.java:257)
+	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:221)
+	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
+	at org.matsim.core.controler.AbstractController$8.run(AbstractController.java:197)
+	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
+	at org.matsim.core.controler.AbstractController.mobsim(AbstractController.java:193)
+	at org.matsim.core.controler.AbstractController.iteration(AbstractController.java:144)
+	at org.matsim.core.controler.AbstractController.doIterations(AbstractController.java:112)
+	at org.matsim.core.controler.AbstractController.access$100(AbstractController.java:28)
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:80)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:48)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:31)
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:88)
+	at org.matsim.core.controler.NewControler.run(NewControler.java:84)
+	at org.matsim.core.controler.Controler.run(Controler.java:240)
+	at simulator.Simulator.run(Simulator.java:59)
+	at simulator.Simulator.main(Simulator.java:40)
+2019-11-15 10:01:57,146 ERROR MatsimRuntimeModifications:60 ERROR --- This is an unexpected shutdown!
+2019-11-15 10:01:57,146 ERROR MatsimRuntimeModifications:63 Shutdown possibly caused by the following Exception:
+java.lang.RuntimeException: Object is null; follow stack trace
+	at org.matsim.core.gbl.Gbl.assertNotNull(Gbl.java:209)
+	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertVehicles(PopulationAgentSource.java:116)
+	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertAgentsIntoMobsim(PopulationAgentSource.java:68)
+	at org.matsim.core.mobsim.qsim.QSim.createAgents(QSim.java:272)
+	at org.matsim.core.mobsim.qsim.QSim.prepareSim(QSim.java:257)
+	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:221)
+	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
+	at org.matsim.core.controler.AbstractController$8.run(AbstractController.java:197)
+	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
+	at org.matsim.core.controler.AbstractController.mobsim(AbstractController.java:193)
+	at org.matsim.core.controler.AbstractController.iteration(AbstractController.java:144)
+	at org.matsim.core.controler.AbstractController.doIterations(AbstractController.java:112)
+	at org.matsim.core.controler.AbstractController.access$100(AbstractController.java:28)
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:80)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:48)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:31)
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:88)
+	at org.matsim.core.controler.NewControler.run(NewControler.java:84)
+	at org.matsim.core.controler.Controler.run(Controler.java:240)
+	at simulator.Simulator.run(Simulator.java:59)
+	at simulator.Simulator.main(Simulator.java:40)
+2019-11-15 10:01:57,161 ERROR MatsimRuntimeModifications:78 ERROR --- MATSim unexpectedly terminated. Please check the output or the logfile with warnings and errors for hints.
+2019-11-15 10:01:57,161 ERROR MatsimRuntimeModifications:79 ERROR --- results should not be used for further analysis.
+2019-11-15 10:01:57,161 ERROR MatsimRuntimeModifications:83 ERROR --- This was an unexpected shutdown! See the log file for a possible reason.
