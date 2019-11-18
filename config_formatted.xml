@@ -2,13 +2,13 @@
 <!DOCTYPE config SYSTEM "http://www.matsim.org/files/dtd/config_v2.dtd">
 <config>
   <module name="network">
-    <param name="inputNetworkFile" value="D:\Benjamin Brownlee\matsim\run5\input\network.xml"/>
+    <param name="inputNetworkFile" value="network.xml.gz"/>
   </module>
   <module name="vehicles">
-    <param name="vehiclesFile" value="D:\Benjamin Brownlee\matsim\run5\input\vehicles.xml"/>
+    <param name="vehiclesFile" value="vehicles_formatted.xml"/>
   </module>
   <module name="plans">
-    <param name="inputPlansFile" value="D:\Benjamin Brownlee\matsim\run5\input\plans.xml"/>
+    <param name="inputPlansFile" value="plans_formatted.xml"/>
   </module>
   <module name="controler">
     <param name="outputDirectory" value="D:\Benjamin Brownlee\matsim\run5\output\"/>
