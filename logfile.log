@@ -1,17 +1,17 @@
-2019-11-15 10:01:42,067  INFO Gbl:63 JVM: 11.0.1; Oracle Corporation; mixed mode; 64-bit
-2019-11-15 10:01:42,067  INFO Gbl:67 OS: Windows 10; 10.0; amd64
-2019-11-15 10:01:42,067  INFO Gbl:70 CPU cores: 24
-2019-11-15 10:01:42,067  INFO Gbl:71 max. Memory: 24576.0MB (25769803776B)
-2019-11-15 10:01:42,083  INFO Gbl:109 MATSim-Build: r92f5a963d96c1378d104c07359ace3469f91ad77 (2019-04-10 11:10:17)
-2019-11-15 10:01:42,083  INFO ControlerListenerManagerImpl:107 calling notifyStartup on org.matsim.counts.CountsControlerListener
-2019-11-15 10:01:42,083  INFO ControlerListenerManagerImpl:107 calling notifyStartup on org.matsim.analysis.ModeStatsControlerListener
-2019-11-15 10:01:42,083 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:42,083 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:42,083 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:42,083  INFO ControlerListenerManagerImpl:107 calling notifyStartup on org.matsim.analysis.ScoreStatsControlerListener
-2019-11-15 10:01:42,083  INFO ControlerListenerManagerImpl:110 all ControlerStartupListeners called.
-2019-11-15 10:01:42,083  INFO ControlerUtils:58 config dump before iterations start
-2019-11-15 10:01:42,099  INFO ControlerUtils:62 
+2019-11-18 08:34:02,922  INFO Gbl:63 JVM: 11.0.1; Oracle Corporation; mixed mode; 64-bit
+2019-11-18 08:34:02,922  INFO Gbl:67 OS: Windows 10; 10.0; amd64
+2019-11-18 08:34:02,922  INFO Gbl:70 CPU cores: 24
+2019-11-18 08:34:02,922  INFO Gbl:71 max. Memory: 24576.0MB (25769803776B)
+2019-11-18 08:34:02,922  INFO Gbl:109 MATSim-Build: r92f5a963d96c1378d104c07359ace3469f91ad77 (2019-04-10 11:10:17)
+2019-11-18 08:34:02,938  INFO ControlerListenerManagerImpl:107 calling notifyStartup on org.matsim.counts.CountsControlerListener
+2019-11-18 08:34:02,938  INFO ControlerListenerManagerImpl:107 calling notifyStartup on org.matsim.analysis.ModeStatsControlerListener
+2019-11-18 08:34:02,938 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:02,938 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:02,938 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:02,938  INFO ControlerListenerManagerImpl:107 calling notifyStartup on org.matsim.analysis.ScoreStatsControlerListener
+2019-11-18 08:34:02,938  INFO ControlerListenerManagerImpl:110 all ControlerStartupListeners called.
+2019-11-18 08:34:02,938  INFO ControlerUtils:58 config dump before iterations start
+2019-11-18 08:34:02,954  INFO ControlerUtils:62 
 
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE config SYSTEM "http://www.matsim.org/files/dtd/config_v2.dtd">
@@ -618,7 +618,7 @@
 		<!-- The (initial) width of the links of the network. Use positive floating point values. This is used only for visualisation. -->
 		<param name="linkWidth" value="30.0" />
 		<!-- [comma-separated list] Defines which modes are congested modes. Technically, these are the modes that the departure handler of the netsimengine handles.  Effective cell size, effective lane width, flow capacity factor, and storage capacity factor need to be set with diligence.  Need to be vehicular modes to make sense. -->
-		<param name="mainMode" value="car,walk,bike" />
+		<param name="mainMode" value="car" />
 		<!-- Shortens a link in the visualization, i.e. its start and end point are moved into towards the center. Does not affect traffic flow.  -->
 		<param name="nodeOffset" value="0.0" />
 		<!-- Number of threads used for the QSim.  Note that this setting is independent from the "global" threads setting.  In contrast to earlier versions, the non-parallel special version is no longer there. -->
@@ -763,9 +763,9 @@
 
 </config>
 
-2019-11-15 10:01:42,114  INFO ControlerUtils:63 Complete config dump done.
-2019-11-15 10:01:42,114  INFO ControlerUtils:64 Checking consistency of config...
-2019-11-15 10:01:42,114  INFO PlanCalcScoreConfigGroup$ScoringParameterSet:1492 NO OPENING OR CLOSING TIMES DEFINED!
+2019-11-18 08:34:02,969  INFO ControlerUtils:63 Complete config dump done.
+2019-11-18 08:34:02,969  INFO ControlerUtils:64 Checking consistency of config...
+2019-11-18 08:34:02,969  INFO PlanCalcScoreConfigGroup$ScoringParameterSet:1492 NO OPENING OR CLOSING TIMES DEFINED!
 
 There is no activity type that has an opening *and* closing time (or opening time and late penalty) defined.
 This usually means that the activity chains can be shifted by an arbitrary
@@ -774,278 +774,382 @@ resulting in wrong results / traffic patterns.
 If you are using MATSim without time adaptation, you can ignore this warning.
 
 
-2019-11-15 10:01:42,114  INFO VspConfigConsistencyCheckerImpl:58 NOT running vsp config consistency check because vsp defaults checking level is set to IGNORE
-2019-11-15 10:01:42,114  WARN ConfigConsistencyCheckerImpl:165 Using lanes without enabling linktolinkrouting might not lead to expected simulation results
-2019-11-15 10:01:42,114  WARN ConfigConsistencyCheckerImpl:61 AnalyzedModes in travelTimeCalculator config is not superset of network routing modes.  Will fail later except when defined by other means.
-2019-11-15 10:01:42,114  INFO ControlerUtils:66 Checking consistency of config done.
-2019-11-15 10:01:42,130  INFO PrepareForSimImpl:79 Network seems to be multimodal. Create car-only network which is handed over to PersonPrepareForSim.
-2019-11-15 10:01:42,130  INFO NetworkImpl:167  node # 1
-2019-11-15 10:01:42,130  INFO NetworkImpl:167  node # 4
-2019-11-15 10:01:42,130  INFO NetworkImpl:167  node # 16
-2019-11-15 10:01:42,130  INFO NetworkImpl:167  node # 64
-2019-11-15 10:01:42,130  INFO NetworkImpl:167  node # 256
-2019-11-15 10:01:42,130  INFO NetworkImpl:167  node # 1024
-2019-11-15 10:01:42,130  INFO NetworkImpl:167  node # 4096
-2019-11-15 10:01:42,130  INFO NetworkImpl:167  node # 16384
-2019-11-15 10:01:42,145  INFO NetworkImpl:167  node # 65536
-2019-11-15 10:01:42,208  INFO NetworkImpl:167  node # 262144
-2019-11-15 10:01:42,223  INFO NetworkImpl:163  link # 1
-2019-11-15 10:01:42,223  INFO NetworkImpl:163  link # 4
-2019-11-15 10:01:42,223  INFO NetworkImpl:163  link # 16
-2019-11-15 10:01:42,223  INFO NetworkImpl:163  link # 64
-2019-11-15 10:01:42,223  INFO NetworkImpl:163  link # 256
-2019-11-15 10:01:42,239  INFO NetworkImpl:163  link # 1024
-2019-11-15 10:01:42,239  INFO NetworkImpl:163  link # 4096
-2019-11-15 10:01:42,270  INFO NetworkImpl:163  link # 16384
-2019-11-15 10:01:42,364  INFO NetworkImpl:163  link # 65536
-2019-11-15 10:01:42,723  INFO NetworkImpl:163  link # 262144
-2019-11-15 10:01:43,824 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:43,824 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:43,840 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:44,020 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:44,020 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:44,020 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:44,192 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:44,192 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:44,192 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:44,333 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:44,348 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:44,348 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:44,489 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:44,489 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:44,489 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:44,645 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:44,645 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:44,645 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:44,801 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:44,801 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:44,801 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:44,958 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:44,958 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:44,958 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:45,114 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:45,114 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:45,114 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:45,270 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:45,270 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:45,270 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:45,411 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:45,411 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:45,426 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:45,567 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:45,567 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:45,567 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:45,724 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:45,724 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:45,724 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:45,880 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:45,880 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:45,880 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:46,036 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:46,036 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:46,036 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:46,192 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:46,192 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:46,192 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:46,349 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:46,349 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:46,349 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:46,505 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:46,505 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:46,505 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:46,661 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:46,661 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:46,661 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:46,801 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:46,801 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:46,801 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:46,958  INFO Counter:70 [PersonPrepareForSim] handled person # 1
-2019-11-15 10:01:46,973  INFO Counter:70 [PersonPrepareForSim] handled person # 128
-2019-11-15 10:01:46,973  INFO Counter:70 [PersonPrepareForSim] handled person # 64
-2019-11-15 10:01:46,973  INFO Counter:70 [PersonPrepareForSim] handled person # 32
-2019-11-15 10:01:46,958  INFO Counter:70 [PersonPrepareForSim] handled person # 16
-2019-11-15 10:01:46,958  INFO Counter:70 [PersonPrepareForSim] handled person # 8
-2019-11-15 10:01:46,958  INFO Counter:70 [PersonPrepareForSim] handled person # 4
-2019-11-15 10:01:46,958  INFO Counter:70 [PersonPrepareForSim] handled person # 2
-2019-11-15 10:01:46,989  INFO Counter:76 [PersonPrepareForSim] handled person # 240
-2019-11-15 10:01:47,098  INFO AbstractController:123 ###################################################
-2019-11-15 10:01:47,098  INFO AbstractController:124 ### ITERATION 0 BEGINS
-2019-11-15 10:01:47,098  INFO ControlerListenerManagerImpl:145 calling notifyIterationStarts on org.matsim.analysis.LegHistogramListener
-2019-11-15 10:01:47,098  INFO ControlerListenerManagerImpl:145 calling notifyIterationStarts on org.matsim.analysis.LinkStatsControlerListener
-2019-11-15 10:01:47,098  INFO ControlerListenerManagerImpl:145 calling notifyIterationStarts on org.matsim.core.replanning.ReplanningContextImpl
-2019-11-15 10:01:47,098  INFO ControlerListenerManagerImpl:145 calling notifyIterationStarts on org.matsim.core.scoring.ExperiencedPlansServiceImpl$1
-2019-11-15 10:01:47,098  INFO ControlerListenerManagerImpl:145 calling notifyIterationStarts on org.matsim.core.scoring.ScoringFunctionsForPopulation$1
-2019-11-15 10:01:47,114  INFO ControlerListenerManagerImpl:148 [it.0] all ControlerIterationStartsListeners called.
-2019-11-15 10:01:47,114  INFO ControlerListenerManagerImpl:224 calling notifyBeforeMobsim on org.matsim.core.controler.corelisteners.EventsHandlingImpl
-2019-11-15 10:01:47,114  INFO EventsManagerImpl:170 resetting Event-Handlers
-2019-11-15 10:01:47,114  INFO EventsManagerImpl:177   org.matsim.core.trafficmonitoring.TravelTimeCalculator
-2019-11-15 10:01:47,114  INFO EventsManagerImpl:177   org.matsim.core.trafficmonitoring.TravelTimeCalculator
-2019-11-15 10:01:47,114  INFO EventsManagerImpl:177   org.matsim.core.trafficmonitoring.TravelTimeCalculator
-2019-11-15 10:01:47,114  INFO EventsManagerImpl:177   org.matsim.core.scoring.EventsToLegsAndActivities
-2019-11-15 10:01:47,114  INFO EventsManagerImpl:177   org.matsim.analysis.VolumesAnalyzer
-2019-11-15 10:01:47,114  INFO EventsManagerImpl:177   org.matsim.core.events.algorithms.Vehicle2DriverEventHandler
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:177   org.matsim.core.scoring.ScoringFunctionsForPopulation
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:177   org.matsim.analysis.LegHistogram
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:177   org.matsim.analysis.CalcLegTimes
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:144 adding Event-Handler: org.matsim.core.events.algorithms.EventWriterXML
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:148   org.matsim.core.events.algorithms.EventWriter
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:148   org.matsim.core.events.handler.BasicEventHandler
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:207     > org.matsim.api.core.v01.events.Event
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:156 
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:144 adding Event-Handler: org.matsim.core.events.algorithms.EventWriterXML
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:148   org.matsim.core.events.algorithms.EventWriter
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:148   org.matsim.core.events.handler.BasicEventHandler
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:207     > org.matsim.api.core.v01.events.Event
-2019-11-15 10:01:47,130  INFO EventsManagerImpl:156 
-2019-11-15 10:01:47,130  INFO ControlerListenerManagerImpl:224 calling notifyBeforeMobsim on org.matsim.core.controler.corelisteners.PlansDumpingImpl
-2019-11-15 10:01:47,130  INFO PlansDumpingImpl:76 dumping plans...
-2019-11-15 10:01:47,145  INFO Counter:70 [PopulationWriter] dumped person # 1
-2019-11-15 10:01:47,145  INFO Counter:70 [PopulationWriter] dumped person # 2
-2019-11-15 10:01:47,145  INFO Counter:70 [PopulationWriter] dumped person # 4
-2019-11-15 10:01:47,161  INFO Counter:70 [PopulationWriter] dumped person # 8
-2019-11-15 10:01:47,176  INFO Counter:70 [PopulationWriter] dumped person # 16
-2019-11-15 10:01:47,192  INFO Counter:70 [PopulationWriter] dumped person # 32
-2019-11-15 10:01:47,224  INFO Counter:70 [PopulationWriter] dumped person # 64
-2019-11-15 10:01:47,286  INFO Counter:70 [PopulationWriter] dumped person # 128
-2019-11-15 10:01:47,395  INFO PopulationWriter:139 Population written to: D:\Benjamin Brownlee\matsim\run5\output\/ITERS/it.0/0.plans.xml.gz
-2019-11-15 10:01:47,395  INFO Counter:76 [PopulationWriter] dumped person # 240
-2019-11-15 10:01:47,395  INFO PlansDumpingImpl:93 finished plans dump.
-2019-11-15 10:01:47,411  INFO ControlerListenerManagerImpl:229 calling notifyBeforeMobsim on org.matsim.core.population.VspPlansCleaner
-2019-11-15 10:01:47,411  INFO ControlerListenerManagerImpl:232 [it.0] all ControlerBeforeMobsimListeners called.
-2019-11-15 10:01:47,411  INFO PrepareForMobsimImpl:79 Network seems to be multimodal. Create car-only network which is handed over to PersonPrepareForSim.
-2019-11-15 10:01:47,411  INFO NetworkImpl:167  node # 1
-2019-11-15 10:01:47,411  INFO NetworkImpl:167  node # 4
-2019-11-15 10:01:47,411  INFO NetworkImpl:167  node # 16
-2019-11-15 10:01:47,411  INFO NetworkImpl:167  node # 64
-2019-11-15 10:01:47,411  INFO NetworkImpl:167  node # 256
-2019-11-15 10:01:47,411  INFO NetworkImpl:167  node # 1024
-2019-11-15 10:01:47,411  INFO NetworkImpl:167  node # 4096
-2019-11-15 10:01:47,411  INFO NetworkImpl:167  node # 16384
-2019-11-15 10:01:47,442  INFO NetworkImpl:167  node # 65536
-2019-11-15 10:01:47,520  INFO NetworkImpl:167  node # 262144
-2019-11-15 10:01:47,551  INFO NetworkImpl:163  link # 1
-2019-11-15 10:01:47,551  INFO NetworkImpl:163  link # 4
-2019-11-15 10:01:47,551  INFO NetworkImpl:163  link # 16
-2019-11-15 10:01:47,551  INFO NetworkImpl:163  link # 64
-2019-11-15 10:01:47,551  INFO NetworkImpl:163  link # 256
-2019-11-15 10:01:47,551  INFO NetworkImpl:163  link # 1024
-2019-11-15 10:01:47,567  INFO NetworkImpl:163  link # 4096
-2019-11-15 10:01:47,598  INFO NetworkImpl:163  link # 16384
-2019-11-15 10:01:47,723  INFO NetworkImpl:163  link # 65536
-2019-11-15 10:01:48,239  INFO NetworkImpl:163  link # 262144
-2019-11-15 10:01:49,458 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:49,458 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:49,471 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:49,614 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:49,614 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:49,630 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:49,786 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:49,786 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:49,786 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:49,942 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:49,942 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:49,942 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:50,098 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:50,098 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:50,098 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:50,223 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:50,223 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:50,223 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:50,364 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:50,364 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:50,364 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:50,489 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:50,489 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:50,505 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:50,630 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:50,630 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:50,630 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:50,770 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:50,770 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:50,770 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:50,895 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:50,895 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:50,895 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:51,036 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:51,036 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:51,036 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:51,161 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:51,177 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:51,177 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:52,442 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:52,442 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:52,442 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:52,567 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:52,567 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:52,567 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:52,692 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:52,692 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:52,692 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:52,817 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:52,817 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:52,817 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:52,942 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:52,942 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:52,942 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:53,067 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:53,067 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:53,067 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:53,192 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
-2019-11-15 10:01:53,192 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
-2019-11-15 10:01:53,192 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
-2019-11-15 10:01:53,317  INFO Counter:70 [PersonPrepareForSim] handled person # 1
-2019-11-15 10:01:53,317  INFO Counter:70 [PersonPrepareForSim] handled person # 2
-2019-11-15 10:01:53,333  INFO Counter:70 [PersonPrepareForSim] handled person # 4
-2019-11-15 10:01:53,333  INFO Counter:70 [PersonPrepareForSim] handled person # 8
-2019-11-15 10:01:53,333  INFO Counter:70 [PersonPrepareForSim] handled person # 16
-2019-11-15 10:01:53,333  INFO Counter:70 [PersonPrepareForSim] handled person # 32
-2019-11-15 10:01:53,333  INFO Counter:70 [PersonPrepareForSim] handled person # 64
-2019-11-15 10:01:53,333  INFO Counter:70 [PersonPrepareForSim] handled person # 128
-2019-11-15 10:01:53,349  INFO Counter:76 [PersonPrepareForSim] handled person # 240
-2019-11-15 10:01:53,442  INFO MobsimListenerManager:49 calling addQueueSimulationListener
-2019-11-15 10:01:53,442  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.framework.listeners.MobsimListener
-2019-11-15 10:01:53,442  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.vis.snapshotwriters.SnapshotWriterManager
-2019-11-15 10:01:53,442  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.framework.listeners.MobsimBeforeCleanupListener
-2019-11-15 10:01:53,442  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.framework.listeners.MobsimInitializedListener
-2019-11-15 10:01:53,442  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.framework.listeners.MobsimAfterSimStepListener
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103420 too small: enlarge storage capacity from: 74.22609731173559 Vehicles to: 371.130486558678 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103421 too small: enlarge storage capacity from: 74.22609731173559 Vehicles to: 371.130486558678 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103422 too small: enlarge storage capacity from: 85.89874962720619 Vehicles to: 429.493748136031 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103423 too small: enlarge storage capacity from: 85.89874962720619 Vehicles to: 429.493748136031 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103424 too small: enlarge storage capacity from: 75.5745333860178 Vehicles to: 377.8726669300891 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103425 too small: enlarge storage capacity from: 75.5745333860178 Vehicles to: 377.8726669300891 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103426 too small: enlarge storage capacity from: 68.05329724978756 Vehicles to: 340.2664862489378 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103427 too small: enlarge storage capacity from: 68.05329724978756 Vehicles to: 340.2664862489378 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,614  WARN QueueWithBuffer:378 Link 103428 too small: enlarge storage capacity from: 69.71473922549748 Vehicles to: 348.5736961274875 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,614  WARN QueueWithBuffer:378 Link 103429 too small: enlarge storage capacity from: 69.71473922549748 Vehicles to: 348.5736961274875 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,614  WARN QueueWithBuffer:378 Link 103430 too small: enlarge storage capacity from: 75.78185582822537 Vehicles to: 378.9092791411269 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,614  WARN QueueWithBuffer:381 Additional warnings of this type are suppressed.
-2019-11-15 10:01:57,083  INFO QSimProvider:111 Added MobsimEngine class org.matsim.core.mobsim.qsim.ActivityEngine
-2019-11-15 10:01:57,083  INFO QSimProvider:117 Added Activityhandler class org.matsim.core.mobsim.qsim.ActivityEngine
-2019-11-15 10:01:57,083  INFO QSimProvider:123 Added DepartureHandler class org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler
-2019-11-15 10:01:57,083  INFO QSimProvider:111 Added MobsimEngine class org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine
-2019-11-15 10:01:57,083  INFO QSimProvider:111 Added MobsimEngine class org.matsim.core.mobsim.qsim.DefaultTeleportationEngine
-2019-11-15 10:01:57,083  INFO QSimProvider:123 Added DepartureHandler class org.matsim.core.mobsim.qsim.DefaultTeleportationEngine
-2019-11-15 10:01:57,083  INFO QSimProvider:129 Added AgentSource class org.matsim.core.mobsim.qsim.agents.PopulationAgentSource
-2019-11-15 10:01:57,083  INFO MobsimListenerManager:49 calling addQueueSimulationListener
-2019-11-15 10:01:57,083  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.qsim.messagequeueengine.MessageQueueEngine
-2019-11-15 10:01:57,083  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.framework.listeners.MobsimListener
-2019-11-15 10:01:57,083  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.framework.listeners.MobsimBeforeSimStepListener
-2019-11-15 10:01:57,083  INFO QSimProvider:135 Added MobsimListener class org.matsim.core.mobsim.qsim.messagequeueengine.MessageQueueEngine
-2019-11-15 10:01:57,099  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,099  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,099  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:80  Future occurences of this logging statement are suppressed.
-2019-11-15 10:01:57,115 ERROR QSim:313 got exception while cleaning up
+2019-11-18 08:34:02,969  INFO VspConfigConsistencyCheckerImpl:58 NOT running vsp config consistency check because vsp defaults checking level is set to IGNORE
+2019-11-18 08:34:02,969  WARN ConfigConsistencyCheckerImpl:165 Using lanes without enabling linktolinkrouting might not lead to expected simulation results
+2019-11-18 08:34:02,969  WARN ConfigConsistencyCheckerImpl:61 AnalyzedModes in travelTimeCalculator config is not superset of network routing modes.  Will fail later except when defined by other means.
+2019-11-18 08:34:02,985  INFO ControlerUtils:66 Checking consistency of config done.
+2019-11-18 08:34:02,985  INFO PrepareForSimImpl:79 Network seems to be multimodal. Create car-only network which is handed over to PersonPrepareForSim.
+2019-11-18 08:34:02,985  INFO NetworkImpl:167  node # 1
+2019-11-18 08:34:02,985  INFO NetworkImpl:167  node # 4
+2019-11-18 08:34:02,985  INFO NetworkImpl:167  node # 16
+2019-11-18 08:34:02,985  INFO NetworkImpl:167  node # 64
+2019-11-18 08:34:02,985  INFO NetworkImpl:167  node # 256
+2019-11-18 08:34:02,985  INFO NetworkImpl:167  node # 1024
+2019-11-18 08:34:02,985  INFO NetworkImpl:167  node # 4096
+2019-11-18 08:34:02,985  INFO NetworkImpl:167  node # 16384
+2019-11-18 08:34:03,000  INFO NetworkImpl:167  node # 65536
+2019-11-18 08:34:03,063  INFO NetworkImpl:167  node # 262144
+2019-11-18 08:34:03,078  INFO NetworkImpl:163  link # 1
+2019-11-18 08:34:03,078  INFO NetworkImpl:163  link # 4
+2019-11-18 08:34:03,078  INFO NetworkImpl:163  link # 16
+2019-11-18 08:34:03,078  INFO NetworkImpl:163  link # 64
+2019-11-18 08:34:03,094  INFO NetworkImpl:163  link # 256
+2019-11-18 08:34:03,094  INFO NetworkImpl:163  link # 1024
+2019-11-18 08:34:03,094  INFO NetworkImpl:163  link # 4096
+2019-11-18 08:34:03,125  INFO NetworkImpl:163  link # 16384
+2019-11-18 08:34:03,219  INFO NetworkImpl:163  link # 65536
+2019-11-18 08:34:03,610  INFO NetworkImpl:163  link # 262144
+2019-11-18 08:34:04,750 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:04,750 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:04,750 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:04,953 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:04,953 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:04,953 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:05,110 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:05,110 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:05,125 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:05,281 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:05,281 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:05,281 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:05,438 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:05,438 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:05,438 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:05,578 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:05,578 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:05,594 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:05,735 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:05,735 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:05,750 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:05,891 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:05,891 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:05,891 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:06,047 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:06,047 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:06,047 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:06,203 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:06,203 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:06,203 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:06,360 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:06,360 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:06,360 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:06,501 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:06,501 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:06,516 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:06,657 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:06,657 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:06,657 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:06,813 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:06,813 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:06,813 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:06,969 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:06,969 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:06,969 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:07,110 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:07,110 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:07,110 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:07,266 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:07,266 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:07,266 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:07,422 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:07,422 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:07,422 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:07,578 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:07,578 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:07,578 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:07,735 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:07,735 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:07,735 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:07,891  INFO Counter:70 [PersonPrepareForSim] handled person # 1
+2019-11-18 08:34:07,907  INFO Counter:70 [PersonPrepareForSim] handled person # 128
+2019-11-18 08:34:07,891  INFO Counter:70 [PersonPrepareForSim] handled person # 64
+2019-11-18 08:34:07,891  INFO Counter:70 [PersonPrepareForSim] handled person # 32
+2019-11-18 08:34:07,891  INFO Counter:70 [PersonPrepareForSim] handled person # 16
+2019-11-18 08:34:07,891  INFO Counter:70 [PersonPrepareForSim] handled person # 4
+2019-11-18 08:34:07,891  INFO Counter:70 [PersonPrepareForSim] handled person # 8
+2019-11-18 08:34:07,891  INFO Counter:70 [PersonPrepareForSim] handled person # 2
+2019-11-18 08:34:07,907  INFO Counter:76 [PersonPrepareForSim] handled person # 240
+2019-11-18 08:34:08,016  INFO AbstractController:123 ###################################################
+2019-11-18 08:34:08,016  INFO AbstractController:124 ### ITERATION 0 BEGINS
+2019-11-18 08:34:08,016  INFO ControlerListenerManagerImpl:145 calling notifyIterationStarts on org.matsim.analysis.LegHistogramListener
+2019-11-18 08:34:08,016  INFO ControlerListenerManagerImpl:145 calling notifyIterationStarts on org.matsim.analysis.LinkStatsControlerListener
+2019-11-18 08:34:08,016  INFO ControlerListenerManagerImpl:145 calling notifyIterationStarts on org.matsim.core.replanning.ReplanningContextImpl
+2019-11-18 08:34:08,016  INFO ControlerListenerManagerImpl:145 calling notifyIterationStarts on org.matsim.core.scoring.ExperiencedPlansServiceImpl$1
+2019-11-18 08:34:08,032  INFO ControlerListenerManagerImpl:145 calling notifyIterationStarts on org.matsim.core.scoring.ScoringFunctionsForPopulation$1
+2019-11-18 08:34:08,094  INFO ControlerListenerManagerImpl:148 [it.0] all ControlerIterationStartsListeners called.
+2019-11-18 08:34:08,094  INFO ControlerListenerManagerImpl:224 calling notifyBeforeMobsim on org.matsim.core.controler.corelisteners.EventsHandlingImpl
+2019-11-18 08:34:08,094  INFO EventsManagerImpl:170 resetting Event-Handlers
+2019-11-18 08:34:08,094  INFO EventsManagerImpl:177   org.matsim.core.trafficmonitoring.TravelTimeCalculator
+2019-11-18 08:34:08,094  INFO EventsManagerImpl:177   org.matsim.core.trafficmonitoring.TravelTimeCalculator
+2019-11-18 08:34:08,094  INFO EventsManagerImpl:177   org.matsim.core.trafficmonitoring.TravelTimeCalculator
+2019-11-18 08:34:08,094  INFO EventsManagerImpl:177   org.matsim.core.scoring.EventsToLegsAndActivities
+2019-11-18 08:34:08,094  INFO EventsManagerImpl:177   org.matsim.analysis.VolumesAnalyzer
+2019-11-18 08:34:08,094  INFO EventsManagerImpl:177   org.matsim.core.events.algorithms.Vehicle2DriverEventHandler
+2019-11-18 08:34:08,094  INFO EventsManagerImpl:177   org.matsim.core.scoring.ScoringFunctionsForPopulation
+2019-11-18 08:34:08,094  INFO EventsManagerImpl:177   org.matsim.analysis.LegHistogram
+2019-11-18 08:34:08,094  INFO EventsManagerImpl:177   org.matsim.analysis.CalcLegTimes
+2019-11-18 08:34:08,110  INFO EventsManagerImpl:144 adding Event-Handler: org.matsim.core.events.algorithms.EventWriterXML
+2019-11-18 08:34:08,110  INFO EventsManagerImpl:148   org.matsim.core.events.algorithms.EventWriter
+2019-11-18 08:34:08,110  INFO EventsManagerImpl:148   org.matsim.core.events.handler.BasicEventHandler
+2019-11-18 08:34:08,110  INFO EventsManagerImpl:207     > org.matsim.api.core.v01.events.Event
+2019-11-18 08:34:08,110  INFO EventsManagerImpl:156 
+2019-11-18 08:34:08,110  INFO EventsManagerImpl:144 adding Event-Handler: org.matsim.core.events.algorithms.EventWriterXML
+2019-11-18 08:34:08,110  INFO EventsManagerImpl:148   org.matsim.core.events.algorithms.EventWriter
+2019-11-18 08:34:08,110  INFO EventsManagerImpl:148   org.matsim.core.events.handler.BasicEventHandler
+2019-11-18 08:34:08,110  INFO EventsManagerImpl:207     > org.matsim.api.core.v01.events.Event
+2019-11-18 08:34:08,110  INFO EventsManagerImpl:156 
+2019-11-18 08:34:08,110  INFO ControlerListenerManagerImpl:224 calling notifyBeforeMobsim on org.matsim.core.controler.corelisteners.PlansDumpingImpl
+2019-11-18 08:34:08,110  INFO PlansDumpingImpl:76 dumping plans...
+2019-11-18 08:34:08,110  INFO Counter:70 [PopulationWriter] dumped person # 1
+2019-11-18 08:34:08,126  INFO Counter:70 [PopulationWriter] dumped person # 2
+2019-11-18 08:34:08,126  INFO Counter:70 [PopulationWriter] dumped person # 4
+2019-11-18 08:34:08,141  INFO Counter:70 [PopulationWriter] dumped person # 8
+2019-11-18 08:34:08,157  INFO Counter:70 [PopulationWriter] dumped person # 16
+2019-11-18 08:34:08,173  INFO Counter:70 [PopulationWriter] dumped person # 32
+2019-11-18 08:34:08,204  INFO Counter:70 [PopulationWriter] dumped person # 64
+2019-11-18 08:34:08,266  INFO Counter:70 [PopulationWriter] dumped person # 128
+2019-11-18 08:34:08,375  INFO PopulationWriter:139 Population written to: D:\Benjamin Brownlee\matsim\run5\output\/ITERS/it.0/0.plans.xml.gz
+2019-11-18 08:34:08,375  INFO Counter:76 [PopulationWriter] dumped person # 240
+2019-11-18 08:34:08,375  INFO PlansDumpingImpl:93 finished plans dump.
+2019-11-18 08:34:08,375  INFO ControlerListenerManagerImpl:229 calling notifyBeforeMobsim on org.matsim.core.population.VspPlansCleaner
+2019-11-18 08:34:08,375  INFO ControlerListenerManagerImpl:232 [it.0] all ControlerBeforeMobsimListeners called.
+2019-11-18 08:34:08,375  INFO PrepareForMobsimImpl:79 Network seems to be multimodal. Create car-only network which is handed over to PersonPrepareForSim.
+2019-11-18 08:34:08,375  INFO NetworkImpl:167  node # 1
+2019-11-18 08:34:08,375  INFO NetworkImpl:167  node # 4
+2019-11-18 08:34:08,375  INFO NetworkImpl:167  node # 16
+2019-11-18 08:34:08,391  INFO NetworkImpl:167  node # 64
+2019-11-18 08:34:08,391  INFO NetworkImpl:167  node # 256
+2019-11-18 08:34:08,391  INFO NetworkImpl:167  node # 1024
+2019-11-18 08:34:08,391  INFO NetworkImpl:167  node # 4096
+2019-11-18 08:34:08,391  INFO NetworkImpl:167  node # 16384
+2019-11-18 08:34:08,407  INFO NetworkImpl:167  node # 65536
+2019-11-18 08:34:08,469  INFO NetworkImpl:167  node # 262144
+2019-11-18 08:34:08,485  INFO NetworkImpl:163  link # 1
+2019-11-18 08:34:08,485  INFO NetworkImpl:163  link # 4
+2019-11-18 08:34:08,485  INFO NetworkImpl:163  link # 16
+2019-11-18 08:34:08,485  INFO NetworkImpl:163  link # 64
+2019-11-18 08:34:08,485  INFO NetworkImpl:163  link # 256
+2019-11-18 08:34:08,485  INFO NetworkImpl:163  link # 1024
+2019-11-18 08:34:08,485  INFO NetworkImpl:163  link # 4096
+2019-11-18 08:34:09,078  INFO NetworkImpl:163  link # 16384
+2019-11-18 08:34:09,172  INFO NetworkImpl:163  link # 65536
+2019-11-18 08:34:09,563  INFO NetworkImpl:163  link # 262144
+2019-11-18 08:34:10,532 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:10,532 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:10,532 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:10,657 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:10,657 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:10,657 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:10,797 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:10,797 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:10,797 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:10,938 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:10,938 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:10,938 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:11,079 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:11,079 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:11,079 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:11,219 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:11,219 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:11,219 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:11,610 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:11,610 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:11,610 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:11,704 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:11,704 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:11,719 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:11,813 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:11,813 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:11,813 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:11,907 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:11,907 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:11,907 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:12,001 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:12,001 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:12,016 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:12,110 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:12,110 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:12,110 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:12,204 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:12,204 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:12,204 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:12,313 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:12,313 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:12,313 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:12,407 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:12,407 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:12,407 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:12,516 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:12,516 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:12,516 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:12,610 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:12,610 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:12,610 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:12,704 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:12,704 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:12,719 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:12,813 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:12,813 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:12,813 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:12,907 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=car;	mode=car
+2019-11-18 08:34:12,907 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=walk;	mode=walk
+2019-11-18 08:34:12,907 DEBUG NetworkRoutingProvider:75 requesting network routing module with routingMode=bike;	mode=bike
+2019-11-18 08:34:13,016  INFO Counter:70 [PersonPrepareForSim] handled person # 1
+2019-11-18 08:34:13,016  INFO Counter:70 [PersonPrepareForSim] handled person # 2
+2019-11-18 08:34:13,016  INFO Counter:70 [PersonPrepareForSim] handled person # 4
+2019-11-18 08:34:13,016  INFO Counter:70 [PersonPrepareForSim] handled person # 8
+2019-11-18 08:34:13,016  INFO Counter:70 [PersonPrepareForSim] handled person # 16
+2019-11-18 08:34:13,016  INFO Counter:70 [PersonPrepareForSim] handled person # 32
+2019-11-18 08:34:13,016  INFO Counter:70 [PersonPrepareForSim] handled person # 64
+2019-11-18 08:34:13,016  INFO Counter:70 [PersonPrepareForSim] handled person # 128
+2019-11-18 08:34:13,032  INFO Counter:76 [PersonPrepareForSim] handled person # 240
+2019-11-18 08:34:13,126  INFO MobsimListenerManager:49 calling addQueueSimulationListener
+2019-11-18 08:34:13,126  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.framework.listeners.MobsimListener
+2019-11-18 08:34:13,126  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.vis.snapshotwriters.SnapshotWriterManager
+2019-11-18 08:34:13,126  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.framework.listeners.MobsimBeforeCleanupListener
+2019-11-18 08:34:13,126  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.framework.listeners.MobsimInitializedListener
+2019-11-18 08:34:13,126  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.framework.listeners.MobsimAfterSimStepListener
+2019-11-18 08:34:14,547  WARN QueueWithBuffer:378 Link 103420 too small: enlarge storage capacity from: 74.22609731173559 Vehicles to: 371.130486558678 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,547  WARN QueueWithBuffer:378 Link 103421 too small: enlarge storage capacity from: 74.22609731173559 Vehicles to: 371.130486558678 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103422 too small: enlarge storage capacity from: 85.89874962720619 Vehicles to: 429.493748136031 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103423 too small: enlarge storage capacity from: 85.89874962720619 Vehicles to: 429.493748136031 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103424 too small: enlarge storage capacity from: 75.5745333860178 Vehicles to: 377.8726669300891 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103425 too small: enlarge storage capacity from: 75.5745333860178 Vehicles to: 377.8726669300891 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103426 too small: enlarge storage capacity from: 68.05329724978756 Vehicles to: 340.2664862489378 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103427 too small: enlarge storage capacity from: 68.05329724978756 Vehicles to: 340.2664862489378 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103428 too small: enlarge storage capacity from: 69.71473922549748 Vehicles to: 348.5736961274875 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103429 too small: enlarge storage capacity from: 69.71473922549748 Vehicles to: 348.5736961274875 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103430 too small: enlarge storage capacity from: 75.78185582822537 Vehicles to: 378.9092791411269 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:381 Additional warnings of this type are suppressed.
+2019-11-18 08:34:16,547  INFO QSimProvider:111 Added MobsimEngine class org.matsim.core.mobsim.qsim.ActivityEngine
+2019-11-18 08:34:16,563  INFO QSimProvider:117 Added Activityhandler class org.matsim.core.mobsim.qsim.ActivityEngine
+2019-11-18 08:34:16,563  INFO QSimProvider:123 Added DepartureHandler class org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler
+2019-11-18 08:34:16,563  INFO QSimProvider:111 Added MobsimEngine class org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine
+2019-11-18 08:34:16,563  INFO QSimProvider:111 Added MobsimEngine class org.matsim.core.mobsim.qsim.DefaultTeleportationEngine
+2019-11-18 08:34:16,563  INFO QSimProvider:123 Added DepartureHandler class org.matsim.core.mobsim.qsim.DefaultTeleportationEngine
+2019-11-18 08:34:16,563  INFO QSimProvider:129 Added AgentSource class org.matsim.core.mobsim.qsim.agents.PopulationAgentSource
+2019-11-18 08:34:16,563  INFO MobsimListenerManager:49 calling addQueueSimulationListener
+2019-11-18 08:34:16,563  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.qsim.messagequeueengine.MessageQueueEngine
+2019-11-18 08:34:16,563  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.framework.listeners.MobsimListener
+2019-11-18 08:34:16,563  INFO MobsimListenerManager:53   assigned class org.matsim.core.mobsim.framework.listeners.MobsimListener to interface org.matsim.core.mobsim.framework.listeners.MobsimBeforeSimStepListener
+2019-11-18 08:34:16,563  INFO QSimProvider:135 Added MobsimListener class org.matsim.core.mobsim.qsim.messagequeueengine.MessageQueueEngine
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:80  Future occurences of this logging statement are suppressed.
+2019-11-18 08:34:17,219  INFO QNetsimEngine:506 Assigned 16220 nodes and 35206 links to QSimEngineRunner #0
+2019-11-18 08:34:17,219  INFO QNetsimEngine:506 Assigned 16220 nodes and 35208 links to QSimEngineRunner #1
+2019-11-18 08:34:17,219  INFO QNetsimEngine:506 Assigned 16220 nodes and 35129 links to QSimEngineRunner #2
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16220 nodes and 35235 links to QSimEngineRunner #3
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16220 nodes and 35226 links to QSimEngineRunner #4
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16220 nodes and 35140 links to QSimEngineRunner #5
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16220 nodes and 35358 links to QSimEngineRunner #6
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16220 nodes and 35235 links to QSimEngineRunner #7
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16220 nodes and 35433 links to QSimEngineRunner #8
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16220 nodes and 35397 links to QSimEngineRunner #9
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16220 nodes and 35370 links to QSimEngineRunner #10
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16219 nodes and 35286 links to QSimEngineRunner #11
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16219 nodes and 35417 links to QSimEngineRunner #12
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16219 nodes and 35175 links to QSimEngineRunner #13
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16219 nodes and 35165 links to QSimEngineRunner #14
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16219 nodes and 35105 links to QSimEngineRunner #15
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16219 nodes and 35302 links to QSimEngineRunner #16
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16219 nodes and 35142 links to QSimEngineRunner #17
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16219 nodes and 35259 links to QSimEngineRunner #18
+2019-11-18 08:34:17,235  INFO QNetsimEngine:506 Assigned 16219 nodes and 35331 links to QSimEngineRunner #19
+2019-11-18 08:34:17,235  INFO EventsManagerImpl:134  event # 1
+2019-11-18 08:34:17,266  INFO EventsManagerImpl:134  event # 4
+2019-11-18 08:34:17,266  INFO QNetsimEngine:346 SIMULATION (QNetsimEngine) AT 04:33:33 : #links=1 #nodes=1
+2019-11-18 08:34:17,266  INFO QSim:505 SIMULATION (NEW QSim) AT 04:33:33 : #Veh=240 lost=0 simT=0.0s realT=4s; (s/r): 0.0
+2019-11-18 08:34:17,266  INFO Gbl:58 used RAM: 3347054592B = 3268608kB = 3192MB  free: 5100273664B = 4864MB  total: 8447328256B = 8056MB
+2019-11-18 08:34:17,360  INFO EventsManagerImpl:134  event # 16
+2019-11-18 08:34:17,454  INFO EventsManagerImpl:134  event # 64
+2019-11-18 08:34:17,485  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2095800 from link 428760 to link 801975
+2019-11-18 08:34:17,579  INFO EventsManagerImpl:134  event # 256
+2019-11-18 08:34:17,923  INFO QNetsimEngine:346 SIMULATION (QNetsimEngine) AT 05:00:00 : #links=6 #nodes=0
+2019-11-18 08:34:17,923  INFO QSim:505 SIMULATION (NEW QSim) AT 05:00:00 : #Veh=239 lost=1 simT=1587.0s realT=4s; (s/r): 396.75
+2019-11-18 08:34:17,923  INFO Gbl:58 used RAM: 3308714768B = 3231166kB = 3155MB  free: 5138613488B = 4900MB  total: 8447328256B = 8056MB
+2019-11-18 08:34:17,985  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2790627 from link 237111 to link 509154
+2019-11-18 08:34:18,094  INFO EventsManagerImpl:134  event # 1024
+2019-11-18 08:34:18,188  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 445900 from link 351479 to link 575235
+2019-11-18 08:34:18,251  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 483931 from link 247413 to link 279025
+2019-11-18 08:34:18,485  INFO QNetsimEngine:346 SIMULATION (QNetsimEngine) AT 06:00:00 : #links=16 #nodes=2
+2019-11-18 08:34:18,485  INFO QSim:505 SIMULATION (NEW QSim) AT 06:00:00 : #Veh=236 lost=4 simT=5187.0s realT=5s; (s/r): 1037.4
+2019-11-18 08:34:18,485  INFO Gbl:58 used RAM: 3325380392B = 3247441kB = 3171MB  free: 5121947864B = 4884MB  total: 8447328256B = 8056MB
+2019-11-18 08:34:18,517  INFO EventsManagerImpl:134  event # 4096
+2019-11-18 08:34:18,517  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2624243 from link 29646 to link 301476
+2019-11-18 08:34:18,579  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 850935 from link 172509 to link 658300
+2019-11-18 08:34:18,954  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1512875 from link 564995 to link 709542
+2019-11-18 08:34:18,969  INFO QNetsimEngine:346 SIMULATION (QNetsimEngine) AT 07:00:00 : #links=42 #nodes=3
+2019-11-18 08:34:18,969  INFO QSim:505 SIMULATION (NEW QSim) AT 07:00:00 : #Veh=233 lost=7 simT=8787.0s realT=5s; (s/r): 1757.4
+2019-11-18 08:34:18,969  INFO Gbl:58 used RAM: 3355443200B = 3276800kB = 3200MB  free: 5091885056B = 4856MB  total: 8447328256B = 8056MB
+2019-11-18 08:34:19,016  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 821688 from link 534897 to link 153888
+2019-11-18 08:34:19,048  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 928080 from link 565225 to link 776397
+2019-11-18 08:34:19,063  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 406121 from link 473761 to link 343778
+2019-11-18 08:34:19,094  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 931020 from link 565065 to link 442155
+2019-11-18 08:34:19,141  INFO EventsManagerImpl:134  event # 16384
+2019-11-18 08:34:19,266  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 936825 from link 236899 to link 751066
+2019-11-18 08:34:19,298  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1018534 from link 315180 to link 322118
+2019-11-18 08:34:19,485  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 860331 from link 650838 to link 11084
+2019-11-18 08:34:19,501  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2174264 from link 271931 to link 669096
+2019-11-18 08:34:19,501  INFO QNetsimEngine:346 SIMULATION (QNetsimEngine) AT 08:00:00 : #links=72 #nodes=2
+2019-11-18 08:34:19,501  INFO QSim:505 SIMULATION (NEW QSim) AT 08:00:00 : #Veh=225 lost=15 simT=12387.0s realT=6s; (s/r): 2064.5
+2019-11-18 08:34:19,501  INFO Gbl:58 used RAM: 3401580544B = 3321856kB = 3244MB  free: 5045747712B = 4812MB  total: 8447328256B = 8056MB
+2019-11-18 08:34:19,610  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2370810 from link 158288 to link 676267
+2019-11-18 08:34:19,673  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 958046 from link 654661 to link 264304
+2019-11-18 08:34:19,923  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1904874 from link 58587 to link 376955
+2019-11-18 08:34:19,969  INFO QNetsimEngine:346 SIMULATION (QNetsimEngine) AT 09:00:00 : #links=60 #nodes=2
+2019-11-18 08:34:19,969  INFO QSim:505 SIMULATION (NEW QSim) AT 09:00:00 : #Veh=222 lost=18 simT=15987.0s realT=6s; (s/r): 2664.5
+2019-11-18 08:34:19,969  INFO Gbl:58 used RAM: 3444726024B = 3363990kB = 3285MB  free: 5002602232B = 4770MB  total: 8447328256B = 8056MB
+2019-11-18 08:34:19,969  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2247574 from link 565065 to link 282328
+2019-11-18 08:34:20,032  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1428160 from link 173448 to link 659483
+2019-11-18 08:34:20,188  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 685265 from link 371614 to link 468019
+2019-11-18 08:34:20,251  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1466518 from link 233888 to link 48548
+2019-11-18 08:34:20,313  INFO EventsManagerImpl:134  event # 65536
+2019-11-18 08:34:20,313  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 272283 from link 326738 to link 213565
+2019-11-18 08:34:20,345  INFO VehicularDepartureHandler:110 teleport vehicle 2990560 from link 150487 to link 123932
+2019-11-18 08:34:20,345  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2990560 from link 123932 to link 150489
+2019-11-18 08:34:20,361  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 139993 from link 608722 to link 203018
+2019-11-18 08:34:20,361  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1123439 from link 403024 to link 704440
+2019-11-18 08:34:20,407  INFO QNetsimEngine:346 SIMULATION (QNetsimEngine) AT 10:00:00 : #links=67 #nodes=5
+2019-11-18 08:34:20,407  INFO QSim:505 SIMULATION (NEW QSim) AT 10:00:00 : #Veh=214 lost=26 simT=19587.0s realT=7s; (s/r): 2798.1428571428573
+2019-11-18 08:34:20,407  INFO Gbl:58 used RAM: 3485466624B = 3403776kB = 3324MB  free: 4961861632B = 4732MB  total: 8447328256B = 8056MB
+2019-11-18 08:34:20,610  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2951045 from link 411171 to link 771667
+2019-11-18 08:34:20,642 ERROR BasicPlanAgentImpl:159 last activity of person driver agent id 2562545 has end time < infty; setting it to infty
+2019-11-18 08:34:20,642 ERROR BasicPlanAgentImpl:160  This message given only once.
+2019-11-18 08:34:20,657  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 346995 from link 806789 to link 326483
+2019-11-18 08:34:20,704  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 724508 from link 648366 to link 249361
+2019-11-18 08:34:20,704  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 983502 from link 277025 to link 515176
+2019-11-18 08:34:20,766  INFO VehicularDepartureHandler:110 teleport vehicle 500847 from link 460078 to link 286062
+2019-11-18 08:34:20,766  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 500847 from link 286062 to link 227252
+2019-11-18 08:34:20,829  INFO QNetsimEngine:346 SIMULATION (QNetsimEngine) AT 11:00:00 : #links=63 #nodes=4
+2019-11-18 08:34:20,829  INFO QSim:505 SIMULATION (NEW QSim) AT 11:00:00 : #Veh=208 lost=31 simT=23187.0s realT=7s; (s/r): 3312.4285714285716
+2019-11-18 08:34:20,829  INFO Gbl:58 used RAM: 3522513152B = 3439954kB = 3359MB  free: 4924815104B = 4696MB  total: 8447328256B = 8056MB
+2019-11-18 08:34:20,938  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 118307 from link 286270 to link 785870
+2019-11-18 08:34:21,032  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2824536 from link 418995 to link 571654
+2019-11-18 08:34:21,032  INFO VehicularDepartureHandler:110 teleport vehicle 2264248 from link 204497 to link 123932
+2019-11-18 08:34:21,032  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2264248 from link 123932 to link 404140
+2019-11-18 08:34:21,126  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2441739 from link 284243 to link 820864
+2019-11-18 08:34:21,251  INFO QNetsimEngine:346 SIMULATION (QNetsimEngine) AT 12:00:00 : #links=64 #nodes=3
+2019-11-18 08:34:21,251  INFO QSim:505 SIMULATION (NEW QSim) AT 12:00:00 : #Veh=202 lost=35 simT=26787.0s realT=8s; (s/r): 3348.375
+2019-11-18 08:34:21,251  INFO Gbl:58 used RAM: 3559365496B = 3475942kB = 3394MB  free: 4887962760B = 4661MB  total: 8447328256B = 8056MB
+2019-11-18 08:34:21,267  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2830556 from link 277896 to link 617025
+2019-11-18 08:34:21,282  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1331441 from link 562085 to link 203018
+2019-11-18 08:34:21,345  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 741903 from link 757170 to link 119980
+2019-11-18 08:34:21,376  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1495014 from link 450738 to link 17127
+2019-11-18 08:34:21,548 ERROR VehicularDepartureHandler:80 could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0.
+2019-11-18 08:34:21,548 ERROR VehicularDepartureHandler:81 Note that, with AgentSource and if the agent starts on a leg, the vehicle needs to be inserted BEFORE the agent!
+2019-11-18 08:34:21,876 ERROR QSim:313 got exception while cleaning up
 java.lang.NullPointerException
-	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.afterSim(QNetsimEngine.java:239)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.clearVehicles(QueueWithBuffer.java:733)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QLinkImpl.clearVehicles(QLinkImpl.java:114)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.afterSim(QNetsimEngine.java:260)
 	at org.matsim.core.mobsim.qsim.QSim.cleanupSim(QSim.java:310)
 	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:244)
 	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
@@ -1063,14 +1167,12 @@ java.lang.NullPointerException
 	at org.matsim.core.controler.Controler.run(Controler.java:240)
 	at simulator.Simulator.run(Simulator.java:59)
 	at simulator.Simulator.main(Simulator.java:40)
-2019-11-15 10:01:57,115 ERROR AbstractController:208 Mobsim did not complete normally! afterMobsimListeners will be called anyway.
-java.lang.RuntimeException: Object is null; follow stack trace
-	at org.matsim.core.gbl.Gbl.assertNotNull(Gbl.java:209)
-	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertVehicles(PopulationAgentSource.java:116)
-	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertAgentsIntoMobsim(PopulationAgentSource.java:68)
-	at org.matsim.core.mobsim.qsim.QSim.createAgents(QSim.java:272)
-	at org.matsim.core.mobsim.qsim.QSim.prepareSim(QSim.java:257)
-	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:221)
+2019-11-18 08:34:21,876 ERROR AbstractController:208 Mobsim did not complete normally! afterMobsimListeners will be called anyway.
+java.lang.RuntimeException: java.lang.RuntimeException: could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0. aborting ...
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.run(QNetsimEngine.java:332)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.doSimStep(QNetsimEngine.java:270)
+	at org.matsim.core.mobsim.qsim.QSim.doSimStep(QSim.java:363)
+	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:238)
 	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
 	at org.matsim.core.controler.AbstractController$8.run(AbstractController.java:197)
 	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
@@ -1086,20 +1188,52 @@ java.lang.RuntimeException: Object is null; follow stack trace
 	at org.matsim.core.controler.Controler.run(Controler.java:240)
 	at simulator.Simulator.run(Simulator.java:59)
 	at simulator.Simulator.main(Simulator.java:40)
-2019-11-15 10:01:57,115  INFO Gbl:191 Thread performance: Thread=class org.matsim.core.events.SimStepParallelEventsManagerImpl$ProcessEventsRunnable0  cpu-time=0.0sec
-2019-11-15 10:01:57,130  INFO AbstractController$9:220 ### ITERATION 0 fires after mobsim event
-2019-11-15 10:01:57,130  INFO ControlerListenerManagerImpl:248 calling notifyAfterMobsim on org.matsim.analysis.LegTimesControlerListener
-2019-11-15 10:01:57,130  INFO LegTimesControlerListener:50 [0] average trip (probably: leg) duration is: 0 seconds = 00:00:00
-2019-11-15 10:01:57,130  INFO ControlerListenerManagerImpl:248 calling notifyAfterMobsim on org.matsim.core.scoring.EventsToActivities$1
-2019-11-15 10:01:57,130  INFO ControlerListenerManagerImpl:251 [it.0] all ControlerAfterMobsimListeners called.
-2019-11-15 10:01:57,130 ERROR MatsimRuntimeModifications:54 Getting uncaught Exception in Thread main
-java.lang.RuntimeException: Object is null; follow stack trace
-	at org.matsim.core.gbl.Gbl.assertNotNull(Gbl.java:209)
-	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertVehicles(PopulationAgentSource.java:116)
-	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertAgentsIntoMobsim(PopulationAgentSource.java:68)
-	at org.matsim.core.mobsim.qsim.QSim.createAgents(QSim.java:272)
-	at org.matsim.core.mobsim.qsim.QSim.prepareSim(QSim.java:257)
-	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:221)
+Caused by: java.lang.RuntimeException: could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0. aborting ...
+	at org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler.handleCarDeparture(VehicularDepartureHandler.java:83)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler.handleDeparture(VehicularDepartureHandler.java:56)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeAgentDeparture(QSim.java:446)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeNextAgentAction(QSim.java:408)
+	at org.matsim.core.mobsim.qsim.QSim.access$000(QSim.java:91)
+	at org.matsim.core.mobsim.qsim.QSim$1.arrangeNextAgentState(QSim.java:144)
+	at org.matsim.core.mobsim.qsim.ActivityEngine.handleActivity(ActivityEngine.java:163)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeAgentActivity(QSim.java:427)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeNextAgentAction(QSim.java:405)
+	at org.matsim.core.mobsim.qsim.QSim.access$000(QSim.java:91)
+	at org.matsim.core.mobsim.qsim.QSim$1.arrangeNextAgentState(QSim.java:144)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.letVehicleArrive(QNetsimEngine.java:417)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.access$200(QNetsimEngine.java:72)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine$1.letVehicleArrive(QNetsimEngine.java:88)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.AbstractQLink.letVehicleArrive(AbstractQLink.java:163)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.AbstractQLink$QLinkInternalInterface.letVehicleArrive(AbstractQLink.java:517)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.moveQueueToBuffer(QueueWithBuffer.java:496)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.doSimStep(QueueWithBuffer.java:447)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QLinkImpl.doSimStep(QLinkImpl.java:125)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.moveLinks(QNetsimEngineRunner.java:187)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.call(QNetsimEngineRunner.java:122)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.call(QNetsimEngineRunner.java:37)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-18 08:34:21,876  INFO Gbl:191 Thread performance: Thread=class org.matsim.core.events.SimStepParallelEventsManagerImpl$ProcessEventsRunnable0  cpu-time=1.3125sec
+2019-11-18 08:34:21,876  INFO AbstractController$9:220 ### ITERATION 0 fires after mobsim event
+2019-11-18 08:34:21,876  INFO ControlerListenerManagerImpl:248 calling notifyAfterMobsim on org.matsim.analysis.LegTimesControlerListener
+2019-11-18 08:34:21,891  INFO LegTimesControlerListener:50 [0] average trip (probably: leg) duration is: 4551 seconds = 01:15:51
+2019-11-18 08:34:21,891  INFO ControlerListenerManagerImpl:248 calling notifyAfterMobsim on org.matsim.core.scoring.EventsToActivities$1
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:252 The first and the last activity do not have the same type. 
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:253 Will score the first activity from midnight to its end, and the last activity from its start to midnight.
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:254 Because of the nonlinear function, this is not the same as scoring from start to end.
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:255 first activity: [type=home][coord=null][linkId=436504][startTime=undefined][endTime=07:58:42][duration=undefined][facilityId=null]
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:256 last activity: [type=school][coord=null][linkId=511991][startTime=08:10:08][endTime=undefined][duration=undefined][facilityId=null]
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:257 This may also happen when plans are not completed when the simulation ends.
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:259 Additional warnings of this type are suppressed.
+2019-11-18 08:34:21,907  INFO ControlerListenerManagerImpl:251 [it.0] all ControlerAfterMobsimListeners called.
+2019-11-18 08:34:21,907 ERROR MatsimRuntimeModifications:54 Getting uncaught Exception in Thread main
+java.lang.RuntimeException: java.lang.RuntimeException: could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0. aborting ...
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.run(QNetsimEngine.java:332)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.doSimStep(QNetsimEngine.java:270)
+	at org.matsim.core.mobsim.qsim.QSim.doSimStep(QSim.java:363)
+	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:238)
 	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
 	at org.matsim.core.controler.AbstractController$8.run(AbstractController.java:197)
 	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
@@ -1115,16 +1249,41 @@ java.lang.RuntimeException: Object is null; follow stack trace
 	at org.matsim.core.controler.Controler.run(Controler.java:240)
 	at simulator.Simulator.run(Simulator.java:59)
 	at simulator.Simulator.main(Simulator.java:40)
-2019-11-15 10:01:57,146  INFO MatsimRuntimeModifications:58 S H U T D O W N   ---   start shutdown.
-2019-11-15 10:01:57,146 ERROR MatsimRuntimeModifications:60 ERROR --- This is an unexpected shutdown!
-2019-11-15 10:01:57,146 ERROR MatsimRuntimeModifications:63 Shutdown possibly caused by the following Exception:
-java.lang.RuntimeException: Object is null; follow stack trace
-	at org.matsim.core.gbl.Gbl.assertNotNull(Gbl.java:209)
-	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertVehicles(PopulationAgentSource.java:116)
-	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertAgentsIntoMobsim(PopulationAgentSource.java:68)
-	at org.matsim.core.mobsim.qsim.QSim.createAgents(QSim.java:272)
-	at org.matsim.core.mobsim.qsim.QSim.prepareSim(QSim.java:257)
-	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:221)
+Caused by: java.lang.RuntimeException: could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0. aborting ...
+	at org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler.handleCarDeparture(VehicularDepartureHandler.java:83)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler.handleDeparture(VehicularDepartureHandler.java:56)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeAgentDeparture(QSim.java:446)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeNextAgentAction(QSim.java:408)
+	at org.matsim.core.mobsim.qsim.QSim.access$000(QSim.java:91)
+	at org.matsim.core.mobsim.qsim.QSim$1.arrangeNextAgentState(QSim.java:144)
+	at org.matsim.core.mobsim.qsim.ActivityEngine.handleActivity(ActivityEngine.java:163)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeAgentActivity(QSim.java:427)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeNextAgentAction(QSim.java:405)
+	at org.matsim.core.mobsim.qsim.QSim.access$000(QSim.java:91)
+	at org.matsim.core.mobsim.qsim.QSim$1.arrangeNextAgentState(QSim.java:144)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.letVehicleArrive(QNetsimEngine.java:417)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.access$200(QNetsimEngine.java:72)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine$1.letVehicleArrive(QNetsimEngine.java:88)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.AbstractQLink.letVehicleArrive(AbstractQLink.java:163)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.AbstractQLink$QLinkInternalInterface.letVehicleArrive(AbstractQLink.java:517)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.moveQueueToBuffer(QueueWithBuffer.java:496)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.doSimStep(QueueWithBuffer.java:447)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QLinkImpl.doSimStep(QLinkImpl.java:125)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.moveLinks(QNetsimEngineRunner.java:187)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.call(QNetsimEngineRunner.java:122)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.call(QNetsimEngineRunner.java:37)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-18 08:34:21,907  INFO MatsimRuntimeModifications:58 S H U T D O W N   ---   start shutdown.
+2019-11-18 08:34:21,907 ERROR MatsimRuntimeModifications:60 ERROR --- This is an unexpected shutdown!
+2019-11-18 08:34:21,907 ERROR MatsimRuntimeModifications:63 Shutdown possibly caused by the following Exception:
+java.lang.RuntimeException: java.lang.RuntimeException: could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0. aborting ...
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.run(QNetsimEngine.java:332)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.doSimStep(QNetsimEngine.java:270)
+	at org.matsim.core.mobsim.qsim.QSim.doSimStep(QSim.java:363)
+	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:238)
 	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
 	at org.matsim.core.controler.AbstractController$8.run(AbstractController.java:197)
 	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
@@ -1140,13 +1299,40 @@ java.lang.RuntimeException: Object is null; follow stack trace
 	at org.matsim.core.controler.Controler.run(Controler.java:240)
 	at simulator.Simulator.run(Simulator.java:59)
 	at simulator.Simulator.main(Simulator.java:40)
-2019-11-15 10:01:57,146  INFO ControlerListenerManagerImpl:121 calling notifyShutdown on org.matsim.core.controler.corelisteners.EventsHandlingImpl
-2019-11-15 10:01:57,146  INFO ControlerListenerManagerImpl:121 calling notifyShutdown on org.matsim.core.controler.corelisteners.DumpDataAtEndImpl
-2019-11-15 10:01:57,146  INFO ControlerListenerManagerImpl:126 calling notifyShutdown on org.matsim.analysis.ModeStatsControlerListener
-2019-11-15 10:01:57,146  INFO ControlerListenerManagerImpl:126 calling notifyShutdown on org.matsim.analysis.ScoreStatsControlerListener
-2019-11-15 10:01:57,161  INFO ControlerListenerManagerImpl:126 calling notifyShutdown on org.matsim.analysis.TravelDistanceStatsControlerListener
-2019-11-15 10:01:57,161  INFO ControlerListenerManagerImpl:129 all ControlerShutdownListeners called.
-2019-11-15 10:01:57,161 ERROR MatsimRuntimeModifications:78 ERROR --- MATSim unexpectedly terminated. Please check the output or the logfile with warnings and errors for hints.
-2019-11-15 10:01:57,161 ERROR MatsimRuntimeModifications:79 ERROR --- results should not be used for further analysis.
-2019-11-15 10:01:57,161  INFO MatsimRuntimeModifications:81 S H U T D O W N   ---   shutdown completed.
-2019-11-15 10:01:57,161 ERROR MatsimRuntimeModifications:83 ERROR --- This was an unexpected shutdown! See the log file for a possible reason.
+Caused by: java.lang.RuntimeException: could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0. aborting ...
+	at org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler.handleCarDeparture(VehicularDepartureHandler.java:83)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler.handleDeparture(VehicularDepartureHandler.java:56)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeAgentDeparture(QSim.java:446)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeNextAgentAction(QSim.java:408)
+	at org.matsim.core.mobsim.qsim.QSim.access$000(QSim.java:91)
+	at org.matsim.core.mobsim.qsim.QSim$1.arrangeNextAgentState(QSim.java:144)
+	at org.matsim.core.mobsim.qsim.ActivityEngine.handleActivity(ActivityEngine.java:163)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeAgentActivity(QSim.java:427)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeNextAgentAction(QSim.java:405)
+	at org.matsim.core.mobsim.qsim.QSim.access$000(QSim.java:91)
+	at org.matsim.core.mobsim.qsim.QSim$1.arrangeNextAgentState(QSim.java:144)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.letVehicleArrive(QNetsimEngine.java:417)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.access$200(QNetsimEngine.java:72)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine$1.letVehicleArrive(QNetsimEngine.java:88)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.AbstractQLink.letVehicleArrive(AbstractQLink.java:163)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.AbstractQLink$QLinkInternalInterface.letVehicleArrive(AbstractQLink.java:517)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.moveQueueToBuffer(QueueWithBuffer.java:496)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.doSimStep(QueueWithBuffer.java:447)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QLinkImpl.doSimStep(QLinkImpl.java:125)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.moveLinks(QNetsimEngineRunner.java:187)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.call(QNetsimEngineRunner.java:122)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.call(QNetsimEngineRunner.java:37)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-18 08:34:21,907  INFO ControlerListenerManagerImpl:121 calling notifyShutdown on org.matsim.core.controler.corelisteners.EventsHandlingImpl
+2019-11-18 08:34:21,923  INFO ControlerListenerManagerImpl:121 calling notifyShutdown on org.matsim.core.controler.corelisteners.DumpDataAtEndImpl
+2019-11-18 08:34:21,923  INFO ControlerListenerManagerImpl:126 calling notifyShutdown on org.matsim.analysis.ModeStatsControlerListener
+2019-11-18 08:34:21,923  INFO ControlerListenerManagerImpl:126 calling notifyShutdown on org.matsim.analysis.ScoreStatsControlerListener
+2019-11-18 08:34:21,923  INFO ControlerListenerManagerImpl:126 calling notifyShutdown on org.matsim.analysis.TravelDistanceStatsControlerListener
+2019-11-18 08:34:21,923  INFO ControlerListenerManagerImpl:129 all ControlerShutdownListeners called.
+2019-11-18 08:34:21,923 ERROR MatsimRuntimeModifications:78 ERROR --- MATSim unexpectedly terminated. Please check the output or the logfile with warnings and errors for hints.
+2019-11-18 08:34:21,938 ERROR MatsimRuntimeModifications:79 ERROR --- results should not be used for further analysis.
+2019-11-18 08:34:21,938  INFO MatsimRuntimeModifications:81 S H U T D O W N   ---   shutdown completed.
+2019-11-18 08:34:21,938 ERROR MatsimRuntimeModifications:83 ERROR --- This was an unexpected shutdown! See the log file for a possible reason.

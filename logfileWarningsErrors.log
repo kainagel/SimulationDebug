@@ -1,31 +1,76 @@
-2019-11-15 10:01:42,114  WARN ConfigConsistencyCheckerImpl:165 Using lanes without enabling linktolinkrouting might not lead to expected simulation results
-2019-11-15 10:01:42,114  WARN ConfigConsistencyCheckerImpl:61 AnalyzedModes in travelTimeCalculator config is not superset of network routing modes.  Will fail later except when defined by other means.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103420 too small: enlarge storage capacity from: 74.22609731173559 Vehicles to: 371.130486558678 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103421 too small: enlarge storage capacity from: 74.22609731173559 Vehicles to: 371.130486558678 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103422 too small: enlarge storage capacity from: 85.89874962720619 Vehicles to: 429.493748136031 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103423 too small: enlarge storage capacity from: 85.89874962720619 Vehicles to: 429.493748136031 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103424 too small: enlarge storage capacity from: 75.5745333860178 Vehicles to: 377.8726669300891 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103425 too small: enlarge storage capacity from: 75.5745333860178 Vehicles to: 377.8726669300891 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103426 too small: enlarge storage capacity from: 68.05329724978756 Vehicles to: 340.2664862489378 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,599  WARN QueueWithBuffer:378 Link 103427 too small: enlarge storage capacity from: 68.05329724978756 Vehicles to: 340.2664862489378 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,614  WARN QueueWithBuffer:378 Link 103428 too small: enlarge storage capacity from: 69.71473922549748 Vehicles to: 348.5736961274875 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,614  WARN QueueWithBuffer:378 Link 103429 too small: enlarge storage capacity from: 69.71473922549748 Vehicles to: 348.5736961274875 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,614  WARN QueueWithBuffer:378 Link 103430 too small: enlarge storage capacity from: 75.78185582822537 Vehicles to: 378.9092791411269 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
-2019-11-15 10:01:54,614  WARN QueueWithBuffer:381 Additional warnings of this type are suppressed.
-2019-11-15 10:01:57,099  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,099  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,099  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
-2019-11-15 10:01:57,115  WARN QVehicleImpl:80  Future occurences of this logging statement are suppressed.
-2019-11-15 10:01:57,115 ERROR QSim:313 got exception while cleaning up
+2019-11-18 08:34:02,969  WARN ConfigConsistencyCheckerImpl:165 Using lanes without enabling linktolinkrouting might not lead to expected simulation results
+2019-11-18 08:34:02,969  WARN ConfigConsistencyCheckerImpl:61 AnalyzedModes in travelTimeCalculator config is not superset of network routing modes.  Will fail later except when defined by other means.
+2019-11-18 08:34:14,547  WARN QueueWithBuffer:378 Link 103420 too small: enlarge storage capacity from: 74.22609731173559 Vehicles to: 371.130486558678 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,547  WARN QueueWithBuffer:378 Link 103421 too small: enlarge storage capacity from: 74.22609731173559 Vehicles to: 371.130486558678 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103422 too small: enlarge storage capacity from: 85.89874962720619 Vehicles to: 429.493748136031 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103423 too small: enlarge storage capacity from: 85.89874962720619 Vehicles to: 429.493748136031 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103424 too small: enlarge storage capacity from: 75.5745333860178 Vehicles to: 377.8726669300891 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103425 too small: enlarge storage capacity from: 75.5745333860178 Vehicles to: 377.8726669300891 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103426 too small: enlarge storage capacity from: 68.05329724978756 Vehicles to: 340.2664862489378 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103427 too small: enlarge storage capacity from: 68.05329724978756 Vehicles to: 340.2664862489378 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103428 too small: enlarge storage capacity from: 69.71473922549748 Vehicles to: 348.5736961274875 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103429 too small: enlarge storage capacity from: 69.71473922549748 Vehicles to: 348.5736961274875 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:378 Link 103430 too small: enlarge storage capacity from: 75.78185582822537 Vehicles to: 378.9092791411269 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2019-11-18 08:34:14,563  WARN QueueWithBuffer:381 Additional warnings of this type are suppressed.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:75 No VehicleCapacity (= maximum number of passengers) set in Vehicle. Using default value of 4.  This is only a problem if you need vehicles with different capacities, e.g. for minibuses.
+2019-11-18 08:34:16,579  WARN QVehicleImpl:80  Future occurences of this logging statement are suppressed.
+2019-11-18 08:34:17,485  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2095800 from link 428760 to link 801975
+2019-11-18 08:34:17,985  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2790627 from link 237111 to link 509154
+2019-11-18 08:34:18,188  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 445900 from link 351479 to link 575235
+2019-11-18 08:34:18,251  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 483931 from link 247413 to link 279025
+2019-11-18 08:34:18,517  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2624243 from link 29646 to link 301476
+2019-11-18 08:34:18,579  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 850935 from link 172509 to link 658300
+2019-11-18 08:34:18,954  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1512875 from link 564995 to link 709542
+2019-11-18 08:34:19,016  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 821688 from link 534897 to link 153888
+2019-11-18 08:34:19,048  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 928080 from link 565225 to link 776397
+2019-11-18 08:34:19,063  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 406121 from link 473761 to link 343778
+2019-11-18 08:34:19,094  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 931020 from link 565065 to link 442155
+2019-11-18 08:34:19,266  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 936825 from link 236899 to link 751066
+2019-11-18 08:34:19,298  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1018534 from link 315180 to link 322118
+2019-11-18 08:34:19,485  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 860331 from link 650838 to link 11084
+2019-11-18 08:34:19,501  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2174264 from link 271931 to link 669096
+2019-11-18 08:34:19,610  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2370810 from link 158288 to link 676267
+2019-11-18 08:34:19,673  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 958046 from link 654661 to link 264304
+2019-11-18 08:34:19,923  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1904874 from link 58587 to link 376955
+2019-11-18 08:34:19,969  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2247574 from link 565065 to link 282328
+2019-11-18 08:34:20,032  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1428160 from link 173448 to link 659483
+2019-11-18 08:34:20,188  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 685265 from link 371614 to link 468019
+2019-11-18 08:34:20,251  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1466518 from link 233888 to link 48548
+2019-11-18 08:34:20,313  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 272283 from link 326738 to link 213565
+2019-11-18 08:34:20,345  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2990560 from link 123932 to link 150489
+2019-11-18 08:34:20,361  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 139993 from link 608722 to link 203018
+2019-11-18 08:34:20,361  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1123439 from link 403024 to link 704440
+2019-11-18 08:34:20,610  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2951045 from link 411171 to link 771667
+2019-11-18 08:34:20,642 ERROR BasicPlanAgentImpl:159 last activity of person driver agent id 2562545 has end time < infty; setting it to infty
+2019-11-18 08:34:20,642 ERROR BasicPlanAgentImpl:160  This message given only once.
+2019-11-18 08:34:20,657  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 346995 from link 806789 to link 326483
+2019-11-18 08:34:20,704  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 724508 from link 648366 to link 249361
+2019-11-18 08:34:20,704  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 983502 from link 277025 to link 515176
+2019-11-18 08:34:20,766  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 500847 from link 286062 to link 227252
+2019-11-18 08:34:20,938  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 118307 from link 286270 to link 785870
+2019-11-18 08:34:21,032  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2824536 from link 418995 to link 571654
+2019-11-18 08:34:21,032  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2264248 from link 123932 to link 404140
+2019-11-18 08:34:21,126  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2441739 from link 284243 to link 820864
+2019-11-18 08:34:21,267  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 2830556 from link 277896 to link 617025
+2019-11-18 08:34:21,282  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1331441 from link 562085 to link 203018
+2019-11-18 08:34:21,345  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 741903 from link 757170 to link 119980
+2019-11-18 08:34:21,376  WARN DefaultTurnAcceptanceLogic:36 Cannot move vehicle 1495014 from link 450738 to link 17127
+2019-11-18 08:34:21,548 ERROR VehicularDepartureHandler:80 could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0.
+2019-11-18 08:34:21,548 ERROR VehicularDepartureHandler:81 Note that, with AgentSource and if the agent starts on a leg, the vehicle needs to be inserted BEFORE the agent!
+2019-11-18 08:34:21,876 ERROR QSim:313 got exception while cleaning up
 java.lang.NullPointerException
-	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.afterSim(QNetsimEngine.java:239)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.clearVehicles(QueueWithBuffer.java:733)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QLinkImpl.clearVehicles(QLinkImpl.java:114)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.afterSim(QNetsimEngine.java:260)
 	at org.matsim.core.mobsim.qsim.QSim.cleanupSim(QSim.java:310)
 	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:244)
 	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
@@ -43,14 +88,12 @@ java.lang.NullPointerException
 	at org.matsim.core.controler.Controler.run(Controler.java:240)
 	at simulator.Simulator.run(Simulator.java:59)
 	at simulator.Simulator.main(Simulator.java:40)
-2019-11-15 10:01:57,115 ERROR AbstractController:208 Mobsim did not complete normally! afterMobsimListeners will be called anyway.
-java.lang.RuntimeException: Object is null; follow stack trace
-	at org.matsim.core.gbl.Gbl.assertNotNull(Gbl.java:209)
-	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertVehicles(PopulationAgentSource.java:116)
-	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertAgentsIntoMobsim(PopulationAgentSource.java:68)
-	at org.matsim.core.mobsim.qsim.QSim.createAgents(QSim.java:272)
-	at org.matsim.core.mobsim.qsim.QSim.prepareSim(QSim.java:257)
-	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:221)
+2019-11-18 08:34:21,876 ERROR AbstractController:208 Mobsim did not complete normally! afterMobsimListeners will be called anyway.
+java.lang.RuntimeException: java.lang.RuntimeException: could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0. aborting ...
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.run(QNetsimEngine.java:332)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.doSimStep(QNetsimEngine.java:270)
+	at org.matsim.core.mobsim.qsim.QSim.doSimStep(QSim.java:363)
+	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:238)
 	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
 	at org.matsim.core.controler.AbstractController$8.run(AbstractController.java:197)
 	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
@@ -66,14 +109,46 @@ java.lang.RuntimeException: Object is null; follow stack trace
 	at org.matsim.core.controler.Controler.run(Controler.java:240)
 	at simulator.Simulator.run(Simulator.java:59)
 	at simulator.Simulator.main(Simulator.java:40)
-2019-11-15 10:01:57,130 ERROR MatsimRuntimeModifications:54 Getting uncaught Exception in Thread main
-java.lang.RuntimeException: Object is null; follow stack trace
-	at org.matsim.core.gbl.Gbl.assertNotNull(Gbl.java:209)
-	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertVehicles(PopulationAgentSource.java:116)
-	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertAgentsIntoMobsim(PopulationAgentSource.java:68)
-	at org.matsim.core.mobsim.qsim.QSim.createAgents(QSim.java:272)
-	at org.matsim.core.mobsim.qsim.QSim.prepareSim(QSim.java:257)
-	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:221)
+Caused by: java.lang.RuntimeException: could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0. aborting ...
+	at org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler.handleCarDeparture(VehicularDepartureHandler.java:83)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler.handleDeparture(VehicularDepartureHandler.java:56)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeAgentDeparture(QSim.java:446)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeNextAgentAction(QSim.java:408)
+	at org.matsim.core.mobsim.qsim.QSim.access$000(QSim.java:91)
+	at org.matsim.core.mobsim.qsim.QSim$1.arrangeNextAgentState(QSim.java:144)
+	at org.matsim.core.mobsim.qsim.ActivityEngine.handleActivity(ActivityEngine.java:163)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeAgentActivity(QSim.java:427)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeNextAgentAction(QSim.java:405)
+	at org.matsim.core.mobsim.qsim.QSim.access$000(QSim.java:91)
+	at org.matsim.core.mobsim.qsim.QSim$1.arrangeNextAgentState(QSim.java:144)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.letVehicleArrive(QNetsimEngine.java:417)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.access$200(QNetsimEngine.java:72)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine$1.letVehicleArrive(QNetsimEngine.java:88)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.AbstractQLink.letVehicleArrive(AbstractQLink.java:163)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.AbstractQLink$QLinkInternalInterface.letVehicleArrive(AbstractQLink.java:517)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.moveQueueToBuffer(QueueWithBuffer.java:496)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.doSimStep(QueueWithBuffer.java:447)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QLinkImpl.doSimStep(QLinkImpl.java:125)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.moveLinks(QNetsimEngineRunner.java:187)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.call(QNetsimEngineRunner.java:122)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.call(QNetsimEngineRunner.java:37)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:252 The first and the last activity do not have the same type. 
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:253 Will score the first activity from midnight to its end, and the last activity from its start to midnight.
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:254 Because of the nonlinear function, this is not the same as scoring from start to end.
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:255 first activity: [type=home][coord=null][linkId=436504][startTime=undefined][endTime=07:58:42][duration=undefined][facilityId=null]
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:256 last activity: [type=school][coord=null][linkId=511991][startTime=08:10:08][endTime=undefined][duration=undefined][facilityId=null]
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:257 This may also happen when plans are not completed when the simulation ends.
+2019-11-18 08:34:21,891  WARN CharyparNagelActivityScoring:259 Additional warnings of this type are suppressed.
+2019-11-18 08:34:21,907 ERROR MatsimRuntimeModifications:54 Getting uncaught Exception in Thread main
+java.lang.RuntimeException: java.lang.RuntimeException: could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0. aborting ...
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.run(QNetsimEngine.java:332)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.doSimStep(QNetsimEngine.java:270)
+	at org.matsim.core.mobsim.qsim.QSim.doSimStep(QSim.java:363)
+	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:238)
 	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
 	at org.matsim.core.controler.AbstractController$8.run(AbstractController.java:197)
 	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
@@ -89,15 +164,40 @@ java.lang.RuntimeException: Object is null; follow stack trace
 	at org.matsim.core.controler.Controler.run(Controler.java:240)
 	at simulator.Simulator.run(Simulator.java:59)
 	at simulator.Simulator.main(Simulator.java:40)
-2019-11-15 10:01:57,146 ERROR MatsimRuntimeModifications:60 ERROR --- This is an unexpected shutdown!
-2019-11-15 10:01:57,146 ERROR MatsimRuntimeModifications:63 Shutdown possibly caused by the following Exception:
-java.lang.RuntimeException: Object is null; follow stack trace
-	at org.matsim.core.gbl.Gbl.assertNotNull(Gbl.java:209)
-	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertVehicles(PopulationAgentSource.java:116)
-	at org.matsim.core.mobsim.qsim.agents.PopulationAgentSource.insertAgentsIntoMobsim(PopulationAgentSource.java:68)
-	at org.matsim.core.mobsim.qsim.QSim.createAgents(QSim.java:272)
-	at org.matsim.core.mobsim.qsim.QSim.prepareSim(QSim.java:257)
-	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:221)
+Caused by: java.lang.RuntimeException: could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0. aborting ...
+	at org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler.handleCarDeparture(VehicularDepartureHandler.java:83)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler.handleDeparture(VehicularDepartureHandler.java:56)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeAgentDeparture(QSim.java:446)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeNextAgentAction(QSim.java:408)
+	at org.matsim.core.mobsim.qsim.QSim.access$000(QSim.java:91)
+	at org.matsim.core.mobsim.qsim.QSim$1.arrangeNextAgentState(QSim.java:144)
+	at org.matsim.core.mobsim.qsim.ActivityEngine.handleActivity(ActivityEngine.java:163)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeAgentActivity(QSim.java:427)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeNextAgentAction(QSim.java:405)
+	at org.matsim.core.mobsim.qsim.QSim.access$000(QSim.java:91)
+	at org.matsim.core.mobsim.qsim.QSim$1.arrangeNextAgentState(QSim.java:144)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.letVehicleArrive(QNetsimEngine.java:417)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.access$200(QNetsimEngine.java:72)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine$1.letVehicleArrive(QNetsimEngine.java:88)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.AbstractQLink.letVehicleArrive(AbstractQLink.java:163)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.AbstractQLink$QLinkInternalInterface.letVehicleArrive(AbstractQLink.java:517)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.moveQueueToBuffer(QueueWithBuffer.java:496)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.doSimStep(QueueWithBuffer.java:447)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QLinkImpl.doSimStep(QLinkImpl.java:125)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.moveLinks(QNetsimEngineRunner.java:187)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.call(QNetsimEngineRunner.java:122)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.call(QNetsimEngineRunner.java:37)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-18 08:34:21,907 ERROR MatsimRuntimeModifications:60 ERROR --- This is an unexpected shutdown!
+2019-11-18 08:34:21,907 ERROR MatsimRuntimeModifications:63 Shutdown possibly caused by the following Exception:
+java.lang.RuntimeException: java.lang.RuntimeException: could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0. aborting ...
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.run(QNetsimEngine.java:332)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.doSimStep(QNetsimEngine.java:270)
+	at org.matsim.core.mobsim.qsim.QSim.doSimStep(QSim.java:363)
+	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:238)
 	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
 	at org.matsim.core.controler.AbstractController$8.run(AbstractController.java:197)
 	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
@@ -113,6 +213,33 @@ java.lang.RuntimeException: Object is null; follow stack trace
 	at org.matsim.core.controler.Controler.run(Controler.java:240)
 	at simulator.Simulator.run(Simulator.java:59)
 	at simulator.Simulator.main(Simulator.java:40)
-2019-11-15 10:01:57,161 ERROR MatsimRuntimeModifications:78 ERROR --- MATSim unexpectedly terminated. Please check the output or the logfile with warnings and errors for hints.
-2019-11-15 10:01:57,161 ERROR MatsimRuntimeModifications:79 ERROR --- results should not be used for further analysis.
-2019-11-15 10:01:57,161 ERROR MatsimRuntimeModifications:83 ERROR --- This was an unexpected shutdown! See the log file for a possible reason.
+Caused by: java.lang.RuntimeException: could not find requested vehicle 2696060 in simulation for agent org.matsim.core.mobsim.qsim.agents.BasicPlanAgentImpl@773b117b with id 4025493 on link 331359 at time 45702.0. aborting ...
+	at org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler.handleCarDeparture(VehicularDepartureHandler.java:83)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.VehicularDepartureHandler.handleDeparture(VehicularDepartureHandler.java:56)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeAgentDeparture(QSim.java:446)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeNextAgentAction(QSim.java:408)
+	at org.matsim.core.mobsim.qsim.QSim.access$000(QSim.java:91)
+	at org.matsim.core.mobsim.qsim.QSim$1.arrangeNextAgentState(QSim.java:144)
+	at org.matsim.core.mobsim.qsim.ActivityEngine.handleActivity(ActivityEngine.java:163)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeAgentActivity(QSim.java:427)
+	at org.matsim.core.mobsim.qsim.QSim.arrangeNextAgentAction(QSim.java:405)
+	at org.matsim.core.mobsim.qsim.QSim.access$000(QSim.java:91)
+	at org.matsim.core.mobsim.qsim.QSim$1.arrangeNextAgentState(QSim.java:144)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.letVehicleArrive(QNetsimEngine.java:417)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine.access$200(QNetsimEngine.java:72)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngine$1.letVehicleArrive(QNetsimEngine.java:88)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.AbstractQLink.letVehicleArrive(AbstractQLink.java:163)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.AbstractQLink$QLinkInternalInterface.letVehicleArrive(AbstractQLink.java:517)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.moveQueueToBuffer(QueueWithBuffer.java:496)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QueueWithBuffer.doSimStep(QueueWithBuffer.java:447)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QLinkImpl.doSimStep(QLinkImpl.java:125)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.moveLinks(QNetsimEngineRunner.java:187)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.call(QNetsimEngineRunner.java:122)
+	at org.matsim.core.mobsim.qsim.qnetsimengine.QNetsimEngineRunner.call(QNetsimEngineRunner.java:37)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-18 08:34:21,923 ERROR MatsimRuntimeModifications:78 ERROR --- MATSim unexpectedly terminated. Please check the output or the logfile with warnings and errors for hints.
+2019-11-18 08:34:21,938 ERROR MatsimRuntimeModifications:79 ERROR --- results should not be used for further analysis.
+2019-11-18 08:34:21,938 ERROR MatsimRuntimeModifications:83 ERROR --- This was an unexpected shutdown! See the log file for a possible reason.

@@ -478,6 +478,7 @@
     <param name="linkWidth" value="30.0"/>
     <param name="nodeOffset" value="0.0"/>
     <param name="numberOfThreads" value="20"/>
+    <param name="mainMode" value="car"/>
     <param name="removeStuckVehicles" value="false"/>
     <param name="seepMode" value="bike"/>
     <param name="simEndtimeInterpretation" value="null"/>
@@ -493,7 +494,6 @@
     <param name="usingFastCapacityUpdate" value="true"/>
     <param name="usingThreadpool" value="true"/>
     <param name="vehicleBehavior" value="teleport"/>
-    <param name="mainMode" value="car,bike,walk"/>
     <param name="usePersonIdForMissingVehicleId" value="false"/>
     <param name="vehiclesSource" value="fromVehiclesData"/>
   </module>
